@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+h1{
+  font-family: inconsolata, Consolas, Monospace;
+  font-size: 4em;
+  color: #d7b94c;
+}
+.typewriter{
+  position: relative;
+}
+.typewriter::after{
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color: black;
+  width: 100%;
+  animation: typing 5s;
+}
+@keyframes typing{
+  to{
+    width: 0%;
+  }
+}
